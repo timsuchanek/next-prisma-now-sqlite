@@ -1,7 +1,7 @@
 ## Next + Prisma 2 + Now
 
-Example using Next and Prisma
+Example using Next and Prisma with SQLite.
 
-1. on `index.js`, I'm using `getStaticProps` to fetch users
-2. on `posts.js`, I'm using `getServerSideProps` to fetch posts from Next API route `api/posts/`
-3. on `api/posts.js`, that's a serverless function that fetches posts using Prisma client
+As Now uses Lambda under the hood and Lambda only allows writing to `/tmp`, we download a sqlite file into `/tmp`.
+Note, that you can also tell Now in the Now config, to include the sqlite file in the bundle.
+However, I have no idea how to do that together with Next.js, so I'm just downloading the file :shrug:
