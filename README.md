@@ -1,4 +1,4 @@
-## Next + Prisma 2 + Now
+## Next + Prisma 2 + Now + SQLite
 
 Example using Next and Prisma with SQLite.
 
